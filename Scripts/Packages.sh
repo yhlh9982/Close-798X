@@ -48,21 +48,26 @@ UPDATE_PACKAGE() {
 UPDATE_PACKAGE "argon" "sbwml/luci-theme-argon" "openwrt-24.10"
 UPDATE_PACKAGE "theme-kucat" "sirpdboy/luci-theme-kucat" "js"
 UPDATE_PACKAGE "kucat-config" "sirpdboy/luci-app-kucat-config" "main"
+UPDATE_PACKAGE "luci-app-advancedplus" "sirpdboy/luci-app-advancedplus" "main"   #argon-kucat配置
 
 UPDATE_PACKAGE "homeproxy" "VIKINGYFY/homeproxy" "main"
 UPDATE_PACKAGE "nikki" "nikkinikki-org/OpenWrt-nikki" "main"
 UPDATE_PACKAGE "openclash" "vernesong/OpenClash" "dev" "pkg"
 UPDATE_PACKAGE "passwall" "xiaorouji/openwrt-passwall" "main" "pkg"
 UPDATE_PACKAGE "passwall2" "xiaorouji/openwrt-passwall2" "main" "pkg"
+UPDATE_PACKAGE "passwall-packages" "xiaorouji/openwrt-passwall-packages" "main"
+
+#dns转发
+UPDATE_PACKAGE "luci-app-adguardhome" "sirpdboy/sirpdboy-package" "main" "pkg"   #adguard home
+UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"  #mosdns
+UPDATE_PACKAGE "lang/golang" "sbwml/packages_lang_golang" "24.x"
 
 UPDATE_PACKAGE "luci-app-tailscale" "asvow/luci-app-tailscale" "main"
-
 UPDATE_PACKAGE "ddns-go" "sirpdboy/luci-app-ddns-go" "main"
 UPDATE_PACKAGE "diskman" "lisaac/luci-app-diskman" "master"
 UPDATE_PACKAGE "easytier" "EasyTier/luci-app-easytier" "main"
 UPDATE_PACKAGE "fancontrol" "rockjake/luci-app-fancontrol" "main"
 UPDATE_PACKAGE "gecoosac" "lwb1978/openwrt-gecoosac" "main"
-UPDATE_PACKAGE "mosdns" "sbwml/luci-app-mosdns" "v5" "" "v2dat"
 UPDATE_PACKAGE "netspeedtest" "sirpdboy/luci-app-netspeedtest" "js" "" "homebox speedtest"
 UPDATE_PACKAGE "openlist" "sbwml/luci-app-openlist" "main"
 UPDATE_PACKAGE "partexp" "sirpdboy/luci-app-partexp" "main"
